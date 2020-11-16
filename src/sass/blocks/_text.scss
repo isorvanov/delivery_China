@@ -1,0 +1,59 @@
+.title {
+    color: #3a3a3a;
+    &-white {
+        color: #ffffff;
+    }
+    &-fz14 {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+   
+
+    &-fz16 {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.38;
+    }
+    &__advantages {
+        font-weight: 700;
+        color: var(--main-color);
+        line-height: 22px;
+    }
+    &-fz18{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    
+    }
+    &__more-ship {
+        color: var(--main-color);
+        text-align: center;
+    }
+    &-fz19 {
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    &-fz24 {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &-fz26 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        
+    }
+}
+.subtitle {
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #2e2e2e;
+    text-align: center;
+    
+}

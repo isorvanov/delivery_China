@@ -1,0 +1,34 @@
+.btn {
+    background-color: var(--main-color);
+
+    border-radius: 200px;
+    border: var(--main-color) 1px solid;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &_question {
+        width: 160px;
+        height: 45px;
+    }
+    &_ship {
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+        height: 57px;
+        margin-top: 39px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.17;
+    
+    }
+    &_question,
+    &_ship {
+        &:hover {
+            background-color: rgba(#ec644b, 0.6);
+          
+        }
+    }
+}

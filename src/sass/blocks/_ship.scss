@@ -1,0 +1,112 @@
+.ship {
+    padding: 23px 0 82px 0;
+    background: url("../img/bg/bg_main.jpg") no-repeat center (50% / cover);
+    min-height: 680px;
+    &__wrap {
+        display: flex;
+        max-height: 100px;
+    }
+    &__logo {
+        max-width: 96px;
+        object-fit: cover;
+        height: 100px;
+    }
+
+    &__wrap-menu {
+        margin: 37px 30px 49px 30px;
+        display: flex;
+        list-style-type: none;
+        
+    }
+    &__item-menu {
+        padding: 0 14px 0 14px;
+        border-right: 1px dotted #919298;
+        height: 23px;
+        
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__item-link {
+        
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        
+        &:hover{
+            color: var(--main-color);
+            text-decoration: none;
+            border-bottom: 1px solid;
+            padding-bottom: 5px;
+        }
+    }
+    &__header {
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+
+    }
+    &__subtitle {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        color: var(--main-color);
+        margin: 0;
+        margin-top: 26px;
+    }
+    &__descr {
+        margin-top: 9px;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 42px;
+        text-align: center;
+    }
+    &__divaider-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 95px;
+        margin-top: 38px;
+        height: 1px;
+    }
+    &__circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #ffffff;
+        margin-top: -5px;
+    }
+    &__divaider{
+        position: relative;
+        background-color: #ffffff;
+        width: 460px;
+    }
+
+    &__services-wrap {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    &__items {
+        width: 260px;
+    }
+    &__img-wrap {
+        max-width: 64px;
+        max-height: 48px;
+        margin: 0 auto;
+        img {
+            
+            object-fit: cover;
+        }
+    }
+    &__img-first {
+        margin:8px 0;
+    }
+    &__item-descr {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}

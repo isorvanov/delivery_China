@@ -1,0 +1,27 @@
+.advantages {
+    padding: 58px 0 51px 0;
+    background-color: #f3f3f3;
+
+    
+    &__wrap {
+        display: grid;
+        margin-top: 31px;
+        grid-template: repeat(4 , auto)/ repeat(2, 526px);
+        grid-auto-rows: auto;
+        column-gap: 88px;
+        row-gap: 36px;
+    }
+    &__item {
+        display: grid;
+        grid-template: repeat(2 , auto)/ 62px auto;
+        grid-auto-rows: auto;
+        column-gap: 17px;
+        row-gap: 8px;
+    }
+    img {
+        width: 62px;
+        height: 65px;
+        object-fit: cover;
+        grid-row: 1 / 3;
+    }
+}
