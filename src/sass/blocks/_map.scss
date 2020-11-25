@@ -1,0 +1,45 @@
+.map {
+    position: relative;
+    height: 500px;
+    &__label {
+        position: absolute;
+        top: 224px;
+        left: 756px;
+        max-width: 63px;
+        max-height: 63px;
+        object-fit: cover;
+    }
+    &__wrap {
+        position: absolute;
+        top: 171px;
+        left: 853px;
+        width: 310px;
+        height: 170px;
+        padding: 27px 49px 27px 53px;
+        background-color: #fff;
+        border-radius: 5px;
+        &::before {
+            content: ''; 
+            position: absolute;
+            left: -56px; top: 103px;
+            transform: translateY(-50px);
+            border: 36px solid transparent;
+            border-right: 20px solid #fff;
+           }
+    }
+   
+    &__title {
+        line-height: 20px;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+    &__phone, &__email {
+        text-decoration: underline;
+        color: var(--main-color);
+        &:hover {
+        font-weight: 400;
+        color: var(--main-color);
+        }
+    }
+    
+}

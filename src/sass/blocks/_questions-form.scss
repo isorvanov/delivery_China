@@ -1,0 +1,40 @@
+.questions {
+    margin-top: 65px;
+    max-height: 438px;
+    background: url("../img/bg/bg_questions.jpg") no-repeat center (50% / cover);
+    padding: 62px 0 79px 0;
+
+    &__form {
+        width: 896px;
+        margin: 0 auto;
+    }
+    &__header {
+        background-color: var(--sub-color);
+        padding: 20px 0 19px 0;
+        text-align: center;
+    }
+    &__title,
+    &__subtitle {
+        text-transform: uppercase;
+    }
+    &__title {
+        line-height: 19px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 300;
+    }
+    &__input {
+        padding: 17px 35px 25px ;
+        background-color: rgba($color: #fff, $alpha: .7);
+        
+        textarea { 
+            margin: 5px 0 16px 0;
+            width: 100%;
+            resize: none;
+            height: 73px;
+            
+        }
+    }
+}

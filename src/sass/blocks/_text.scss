@@ -3,12 +3,17 @@
     &-white {
         color: #ffffff;
     }
+    &-fz13 {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 300;
+        opacity: 0.6;
+    }
     &-fz14 {
         font-size: 14px;
         line-height: 24px;
         font-weight: 300;
     }
-   
 
     &-fz16 {
         font-size: 16px;
@@ -20,15 +25,19 @@
         color: var(--main-color);
         line-height: 22px;
     }
-    &-fz18{
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 700;
-    
+    &-fz18 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
     }
-    &__more-ship {
+    &__more-ship, &__work-us {
         color: var(--main-color);
         text-align: center;
+    }
+    &__work-us {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
     }
     &-fz19 {
         font-size: 19px;
@@ -46,7 +55,15 @@
         font-weight: 700;
         line-height: 23px;
         text-align: center;
-        
+    }
+    &-upper{
+        text-transform: uppercase;
+    }
+    &-fz28 {
+        font-size: 28px;
+        line-height: 23px;
+        font-weight: 400;
+        text-align: center;
     }
 }
 .subtitle {
@@ -55,5 +72,4 @@
     font-weight: 300;
     color: #2e2e2e;
     text-align: center;
-    
 }

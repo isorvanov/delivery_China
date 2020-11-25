@@ -1,12 +1,14 @@
 @import "libs/bootstrap-reboot.min";
-@import 'base/mixins';
-@import 'base/variables';
+@import "base/mixins";
+@import "base/variables";
+@import "libs/slick";
 
 @font-face {
     font-family: "Roboto Condensed";
     src: url("../fonts/RobotoCondensed-Bold.eot");
     src: url("../fonts/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+        url("../fonts/RobotoCondensed-Bold.woff") format("woff"),
+        url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
@@ -19,42 +21,38 @@
     font-family: "Roboto Condensed";
     src: url("../fonts/RobotoCondensed-Regular.eot");
     src: url("../fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+        url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
+        url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Light.eot');
-    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Light.woff') format('woff'),
-    url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.eot");
+    src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
-    }
+}
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.eot');
-    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Regular.woff') format('woff'),
-    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.eot");
+    src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
-    }
-
+}
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Bold.eot');
-    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Bold.woff') format('woff'),
-    url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.eot");
+    src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
-    }
-
+}
 
 * {
     font-family: "Roboto", sans-serif;
@@ -62,15 +60,53 @@
     padding: 0;
 }
 
-.container {
-    width: 1140px;
+h1,
+h2,
+p {
+    margin: 0;
+}
+.divider {
     margin: 0 auto;
+    width: 148px;
+    height: 1px;
+    background-color: var(--main-color);
 }
 
-@import 'blocks/ship';
-@import 'blocks/text';
-@import 'blocks/question';
-@import 'blocks/btn';
-@import 'blocks/advantages';
-@import 'blocks/more-ship';
+.container {
+    
+    width: 1140px;
+    margin: 0 auto;
+    z-index: 10;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    input, textarea {
+        width: 268px;
+        height: 45px;
+        margin: 0 6px 0 0;
+        padding: 18px 28px;
+        border: solid 1px rgba(0, 0, 0, 0.21);
+        border-radius:30px;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+        outline: none;
+    }
+}
 
+@import "blocks/ship";
+@import "blocks/text";
+@import "blocks/question";
+@import "blocks/btn";
+@import "blocks/advantages";
+@import "blocks/more-ship";
+@import "blocks/agent-china";
+@import "blocks/prices.scss";
+@import 'blocks/manager';
+@import 'blocks/work-us';
+@import 'blocks/reviews';
+@import 'blocks/questions-form';
+@import 'blocks/map';
+@import 'blocks/footer';

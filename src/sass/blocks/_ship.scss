@@ -55,6 +55,7 @@
         color: var(--main-color);
         margin: 0;
         margin-top: 26px;
+        text-transform: uppercase;
     }
     &__descr {
         margin-top: 9px;
@@ -62,6 +63,7 @@
         font-weight: 400;
         line-height: 42px;
         text-align: center;
+        text-transform: uppercase;
     }
     &__divaider-wrap {
         display: flex;

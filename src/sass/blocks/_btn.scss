@@ -1,6 +1,6 @@
 .btn {
     background-color: var(--main-color);
-
+    outline: none;
     border-radius: 200px;
     border: var(--main-color) 1px solid;
     font-size: 12px;
@@ -24,8 +24,21 @@
         line-height: 1.17;
     
     }
+    &_prices {
+        display: block;
+        margin: 25px auto;
+        width: 160px;
+        height: 45px;
+    }
+    &_submit {
+        width: 180px;
+        height: 45px;
+        
+     }
     &_question,
-    &_ship {
+    &_ship,
+    &_prices,
+    &_submit {
         &:hover {
             background-color: rgba(#ec644b, 0.6);
           
